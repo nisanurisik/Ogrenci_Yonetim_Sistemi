@@ -1,18 +1,41 @@
-# Ogrenci_Yonetim_Sistemi
-Projede 3 tip kullanıcı vardır: Öğrenci, Öğretmen ve Memur.
+# Öğrenci Yönetim Sistemi
 
-Proje çalıştırıldığında kullanıcı tipi seçilmesi istenmektedir ve seçilen kullanıcıya göre login ekranına yönlendirilmektedir.
+Bu masaüstü uygulaması, bir eğitim kurumundaki öğrenci, öğretmen ve memur işlemlerini yönetmek amacıyla geliştirilmiştir. Kullanıcı dostu arayüzü ve rol bazlı erişim kontrolü sayesinde güvenli ve kapsamlı bir yönetim sistemi sunar.
 
-Öğrenci ekranında ders kaydı yapma, danışman onayına gönderme, onaylanan ders kayıtlarını listeleme ve not görüntüleme ekranları vardır.
+## Projenin Özellikleri
 
-Öğrenciler derslerden aldıkları vize, final ve bütünleme notlarını kendi ekranlarında yer alan not görüntüleme menüsünden görebilmektedirler.
+### Öğrenci Modülü
+- Ders kayıt işlemleri
+- Not ve transkript görüntüleme
+- Kayıtlı ve geçmiş dönem derslerini listeleme
 
-Öğretmen ekranında danışman onayı,  not girişi ve profil görüntüleme  ekranları vardır.
+### Öğretmen Modülü
+- Not giriş sistemi
+- Profil bilgilerini güncelleme
+- Ders onaylama işlemleri
 
-Öğretmenler bölümlerin sınıflarına memurlar tarafından atanmaktadırlar.
+### Memur Modülü
+- Öğrenci ve öğretmen kaydı oluşturma
+- Sistem yönetimi
 
-Öğretmen ve öğrenci tanımlamaları, danışman atamaları memur ekranından yapılmaktadır. 
+## Kullanılan Teknolojiler
+- **Programlama Dili ve Framework**: C#, .NET Framework, Windows Forms
+- **Veritabanı**: Microsoft SQL Server, ADO.NET
+- **Mimari**: Form-based Architecture, OOP, CRUD Operasyonları
 
-Öğretmenler sisteme  giriş yaptıktan sonra eğer  öğrenci danışmanlığı yoksa sadece kendilerine atanan derslere ilişkin vize, final not girişi yapabilmektedir. Öğrencinin bir dersten başarılı olabilmesi için  0,6* vize + 0,4* final  puanının 50 üzerinde olması gerekmektedir. Bu kritere uyan öğrencinin dersten geçtiği kabul edilmektedir.
+## Veritabanı Tabloları
+- **ogrGiris**: Öğrenci bilgileri
+- **ogrtGiris**: Öğretmen bilgileri
+- **mGiris**: Memur bilgileri
+- **notlar**: Not bilgileri
+- **ogrDers**: Ders bilgileri
+- **danismanOnay**: Danışman onay bilgileri
+- **kesinKayit**: Kesin kayıt bilgileri
+- **gecmisDersler**: Geçmiş dönem ders kayıtları
 
-Öğrenciler sistemden transkript alabilmektedirler. 
+## Güvenlik
+- Kullanıcı kimlik doğrulama
+- Rol bazlı erişim kontrolü
+- Şifre korumalı giriş sistemi
+
+
